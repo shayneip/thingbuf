@@ -1,0 +1,24 @@
+[package]
+name = "thingbuf-fuzz"
+version = "0.1.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+
+[dependencies.thingbuf]
+path = ".."
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "create_buf"
+path = "fuzz_targets/create_buf.rs"
+test = false
+doc = false
