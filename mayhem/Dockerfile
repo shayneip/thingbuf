@@ -14,3 +14,5 @@ RUN cargo +nightly fuzz build
 FROM --platform=linux/amd64 rustlang/rust:nightly
 
 COPY --from=builder /thingbuf/fuzz/target/x86_64-unknown-linux-gnu/release/create_buf /
+
+COPY --from=builder /thingbuf/fuzz/target/x86_64-unknown-linux-gnu/release/pop_buf /

@@ -22,3 +22,9 @@ name = "create_buf"
 path = "fuzz_targets/create_buf.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "pop_buf"
+path = "fuzz_targets/pop_buf.rs"
+test = false
+doc = false

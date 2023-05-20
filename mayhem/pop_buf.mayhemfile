@@ -1,0 +1,6 @@
+project: thingbuf
+target: pop_buf
+duration: 300
+
+cmds:
+  - cmd: /pop_buf
